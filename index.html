@@ -1,56 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="hl82XSKwy1BSifDkKcm7WV_jNhHpTXVaIzvszjvHEuM" />
-<title>AI Study Assistant</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE">
+
+    <title>AI Study Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>📚 AI Study Assistant</h1>
-    <p>Science, Physics, Chemistry & Mathematics</p>
-</header>
+    <header>
+        <h1>📚 AI Study Assistant</h1>
+    </header>
 
-<nav>
-    <button onclick="showSection('chat')">Chat</button>
-    <button onclick="showSection('quiz')">Quiz</button>
-    <button onclick="showSection('notes')">Notes</button>
-</nav>
-
-<section id="chat" class="section">
-    <h2>AI Chat</h2>
-    <input type="text" id="question" placeholder="Ask a question">
-    <button onclick="askQuestion()">Ask</button>
-    <div id="answer"></div>
-</section>
-
-<section id="quiz" class="section" style="display:none;">
-    <h2>Quiz</h2>
-    <p>Quiz section coming soon...</p>
-</section>
-
-<section id="notes" class="section" style="display:none;">
-    <h2>Notes</h2>
-    <p>Study notes coming soon...</p>
-</section>
-
-<script>
-function showSection(sectionId) {
-    document.querySelectorAll('.section').forEach(section => {
-        section.style.display = 'none';
-    });
-    document.getElementById(sectionId).style.display = 'block';
-}
-
-function askQuestion() {
-    let question = document.getElementById("question").value;
-    document.getElementById("answer").innerHTML =
-        "You asked: " + question;
-}
-</script>
+    <main>
+        <h2>Welcome</h2>
+        <p>Your AI Study Assistant website is working.</p>
+    </main>
 
 </body>
 </html>
