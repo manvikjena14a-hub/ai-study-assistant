@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://manvikjena14a-hub.github.io/ai-study-assistant/sitemap.xml
