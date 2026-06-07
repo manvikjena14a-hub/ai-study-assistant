@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -8,18 +8,10 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Study Assistant</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
 
 <header>
     <h1>📚 AI Study Assistant</h1>
-    <p>Science, Physics, Chemistry & Math Learning</p>
+    <p>Science, Physics, Chemistry & Mathematics</p>
 </header>
 
 <nav>
@@ -30,26 +22,35 @@
 
 <section id="chat" class="section">
     <h2>AI Chat</h2>
-    <input type="text" id="question" placeholder="Ask a question...">
+    <input type="text" id="question" placeholder="Ask a question">
     <button onclick="askQuestion()">Ask</button>
     <div id="answer"></div>
 </section>
 
 <section id="quiz" class="section" style="display:none;">
     <h2>Quiz</h2>
-    <p>What is H₂O?</p>
-    <button onclick="checkAnswer('Water')">Water</button>
-    <button onclick="checkAnswer('Oxygen')">Oxygen</button>
-    <button onclick="checkAnswer('Hydrogen')">Hydrogen</button>
-    <p id="quizResult"></p>
+    <p>Quiz section coming soon...</p>
 </section>
 
 <section id="notes" class="section" style="display:none;">
-    <h2>My Notes</h2>
-    <textarea id="notesArea" placeholder="Write notes here..."></textarea>
-    <button onclick="saveNotes()">Save Notes</button>
+    <h2>Notes</h2>
+    <p>Study notes coming soon...</p>
 </section>
 
-<script src="app.js"></script>
+<script>
+function showSection(sectionId) {
+    document.querySelectorAll('.section').forEach(section => {
+        section.style.display = 'none';
+    });
+    document.getElementById(sectionId).style.display = 'block';
+}
+
+function askQuestion() {
+    let question = document.getElementById("question").value;
+    document.getElementById("answer").innerHTML =
+        "You asked: " + question;
+}
+</script>
+
 </body>
 </html>
